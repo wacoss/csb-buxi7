@@ -1,0 +1,267 @@
+html {
+  background-color: #E6ECF0;
+ }
+ body {
+   color: #272727;
+   font-family: "Nunito-Sans", sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   letter-spacing: 0;
+   padding: 0px;
+   margin: 0px;    
+ } 
+ .main{
+   max-width: 1200px;
+   margin: 0px auto;
+ }   
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ /* ********INICIO CABECERA********** */
+ .cabecera {
+   background: #365c9a;
+   padding: 20px 0 15px 0;   /* espacio superior e inferior cabecera */
+   text-align: center;
+ }
+   
+ .logo-image{
+   width: 350px;  
+   max-width: 80%;      
+   padding: 0 0 10px 0;
+   }  
+ .banner-image {
+   padding: 4px 6px 0 6px; /* espacio entre banners */
+   max-width: 100%;  
+ }  
+ /* ********FIN CABECERA********** */
+   
+ /*  ******INICIO CARDS****** */   
+   
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /*  
+ .post-image {
+   height: auto;
+   max-width: 100%;
+ }
+ */  
+ .cards {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+ }
+ .cards_item {
+   display: flex;
+   padding: 12px;
+   min-width: 50px;
+ }
+ 
+ @media (min-width: 40rem) {
+   .cards_item {
+     width: 50%;
+   }
+ }
+ @media (min-width: 55rem) {
+   .cards_item {
+     width: 33.3333%;
+   }
+ }
+ @media (min-width: 72rem) {
+   .cards_item {
+     width: 25%;
+   }
+ }
+ 
+ .card {
+   background-color: white;
+   border-radius: 0.35rem;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+ .card_content {
+   padding: 0 20px 20px 20px;
+   background: #ffffff;
+ }
+   
+ h1 {
+   color: #003366;
+   font-size: 18px;
+   font-weight: 700;
+   letter-spacing: 0.5px; 
+   margin-top: 10px;
+ }
+ 
+ h2 {  
+   font-size: 12px;
+   line-height: 1.4; 
+   color: #777;
+   font-weight: bold;
+ }      
+   
+ p {  
+   font-size: 13px;
+   line-height: 1.4; 
+   color: #666;
+ }          
+ .texto-link {  
+   font-size: 13px;
+   font-weight: bold;
+   text-decoration: underline;
+ }     
+ /*  
+ .card_descrip {
+   font-size: 12px;
+   font-weight: bold;
+   color: #777;
+ } */ 
+ .card_text_sitiooficial {  
+   font-size: 10px;
+   line-height: 1.1;    
+   color: #BBB;
+ }
+   
+ h3 {  
+   color: #FFF;
+   text-align: center;
+   margin: auto;
+   padding: 0px; 
+ }  
+     
+ .card_calendar {
+   font-family: "Arial", sans-serif;
+   position: absolute;
+   padding: 11px;
+   width: 5em;
+   border-radius: 0.35rem 0 0.35rem 0;
+   box-shadow: 1px 1px 7px 3px rgba(255, 255, 255, 0.25);
+   background: #365C9A;
+   color: #fff;
+ }
+ .nombredia{
+   font-size: 0.8em;
+   text-align: center;
+   line-height: 1em;
+ }  
+ .numerodia {
+   font-size: 1.8em;
+   text-align: center;
+   font-weight: 700;
+   line-height: 1em;
+ }
+ .mes {
+   font-size: 0.8em;
+   text-align: center;
+ }  
+ .miboton {
+   border-radius: 4px;
+   font-size: 14px; 
+   background: #ff3366; 
+   line-height: 2;   
+ }
+ .miboton:hover {
+   background-color: #365c9a;
+ }    
+   
+ /*  ******FIN CSS CARDS****** */  
+ 
+ .iconopreloader {
+   width: 110px;
+   border-radius: 5px;
+   /*background: #f6f6f6; */
+   margin-left: auto; 
+   margin-right: auto;
+   margin-top: 20px;
+   padding: 17px;
+   text-align: center; 
+ }
+   
+ /*  ******INICIO FOOTER ****** */    
+   
+ .elfooter { 
+   background-image: url("https://i.imgur.com/oOBahcO.png");
+   background-position: center center;
+   background-size: cover;
+ }    
+   
+ .contenedor1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px 0 0 0;
+   
+ }
+ .botonfacebook, .botontwitter, .botoninstagram {
+   width: 90px;
+   height: 100px;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center; 
+   margin: 10px;
+ }
+ .botonfacebook {
+   background: #336699;
+ }
+ .botonfacebook:hover {
+   background: #0073AA;
+ }  
+ .botontwitter {
+   background: #0099ff;
+ }  
+ .botontwitter:hover {
+   background: #37AFFF;
+ }  
+ .botoninstagram {
+   background: #cc0000;
+ }  
+ .botoninstagram:hover {
+   background: #F00000;
+ }  
+ 
+ 
+ .texto-redessociales {  
+   font-size: 16px;
+   color: #fff;
+   margin-top: 1px;
+ }    
+ .texto-poweredby {  
+   font-size: 12px;
+   color: #fff;
+ }    
+ 
+   
+ * {   
+   --tamanofuente: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))); 
+ }
+       
+ h4 {  
+   font-size: var(--tamanofuente);
+   --max-font: 32;
+   --min-font: 20; 
+   color: #FFF;
+   margin: 10px 0 10px 0;
+   text-align: center;
+ }
+   
+ .contenedor2 {
+    text-align: center;
+    padding: 0 0 40px 0;
+ }  
+ p2 {
+    font-size: var(--tamanofuente);
+   --max-font: 18;
+   --min-font: 12;
+   color: #FFF;
+ } 
+ 
+ p3 {
+    font-size: var(--tamanofuente);
+   --max-font: 13;
+   --min-font: 10;
+   color: #FFF;
+ }   
